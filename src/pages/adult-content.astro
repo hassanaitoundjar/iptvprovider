@@ -1,0 +1,341 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import paymentLinks from '~/config/pricing';
+
+const metadata = {
+  title: 'Adult Content IPTV - Premium Adult Channels & Content Access 2024',
+  description: 'Access premium adult content channels through IPTV Smarters Pro. Private, secure, and discreet adult entertainment streaming with PIN protection. Get access to exclusive adult channels and content.',
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Adult Content IPTV - Premium Adult Channels Access',
+    description: 'Private and secure adult content streaming through IPTV Smarters Pro. PIN-protected access to premium adult channels.',
+    type: 'website',
+  },
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText
+    tagline="Premium Adult Content"
+    title="Discreet Adult Content Access with IPTV Smarters Pro"
+    subtitle="Private, secure, and PIN-protected access to premium adult channels and content. Stream adult entertainment discreetly on any device with IPTV Smarters Pro."
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Private Adult Entertainment"
+    title="Secure and Discreet Adult Content Streaming"
+    items={[
+      {
+        title: 'PIN-Protected Access',
+        description:
+          'All adult content is protected with a secure PIN code, ensuring privacy and preventing unauthorized access. Only you control who can view adult channels.',
+      },
+      {
+        title: 'Discrete Billing',
+        description:
+          'Your subscription appears as a standard IPTV service on billing statements. No explicit references to adult content for complete privacy.',
+      },
+      {
+        title: 'Premium Content Library',
+        description:
+          'Access thousands of premium adult channels, movies, and on-demand content from leading adult entertainment providers worldwide.',
+      },
+      {
+        title: 'Multi-Device Access',
+        description:
+          'Stream adult content securely on any device - smartphones, tablets, smart TVs, or computers. Your content, your privacy, your way.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Private streaming access',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Complete Privacy and Security</h3>
+      <p class="text-lg text-gray-700 dark:text-slate-300 mb-4">
+        IPTV Smarters Pro offers a secure and private way to access adult content. With advanced PIN protection and discrete billing, your privacy is our top priority. All adult channels are organized separately and require authentication to access.
+      </p>
+      <p class="text-lg text-gray-700 dark:text-slate-300">
+        Our platform ensures that adult content remains completely separate from regular channels, giving you full control over what content is accessible on your account.
+      </p>
+    </Fragment>
+  </Content>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Premium Adult Content Features"
+    subtitle="Discover the advantages of our adult content access with IPTV Smarters Pro"
+    columns={3}
+    items={[
+      {
+        title: 'PIN Protection',
+        description:
+          'All adult content is secured with a customizable PIN code. Set your own PIN and ensure only authorized users can access adult channels.',
+        icon: 'tabler:lock',
+      },
+      {
+        title: 'Discrete Billing',
+        description:
+          'Your subscription appears as standard IPTV service on all billing statements. No explicit references for complete privacy and discretion.',
+        icon: 'tabler:credit-card',
+      },
+      {
+        title: 'Premium Channels',
+        description:
+          'Access thousands of premium adult channels from leading providers worldwide. High-quality streaming with HD and 4K content available.',
+        icon: 'tabler:device-tv',
+      },
+      {
+        title: 'On-Demand Library',
+        description:
+          'Extensive library of adult movies and content available on-demand. Watch what you want, when you want, with full privacy protection.',
+        icon: 'tabler:library',
+      },
+      {
+        title: 'Multi-Device Support',
+        description:
+          'Access adult content securely on any device - smartphones, tablets, smart TVs, computers, and streaming devices. Your privacy protected everywhere.',
+        icon: 'tabler:devices',
+      },
+      {
+        title: '24/7 Access',
+        description:
+          'Round-the-clock access to adult content. Stream anytime, anywhere, with complete privacy and security protection.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'HD & 4K Quality',
+        description:
+          'Experience premium adult content in stunning HD and 4K quality. Crystal-clear streaming for the best viewing experience.',
+        icon: 'tabler:device-desktop',
+      },
+      {
+        title: 'Parental Controls',
+        description:
+          'Advanced parental control features allow you to completely hide or restrict adult content. Perfect for family accounts.',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: 'Secure Streaming',
+        description:
+          'All adult content streams through encrypted connections. Your privacy and security are protected with industry-standard encryption.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <!-- Pricing Widget ******************* -->
+
+  <Prices
+    title="Adult Content IPTV Pricing Plans"
+    subtitle="One time payment - All plans include adult content access"
+    prices={[
+      {
+        title: 'Monthly Plan',
+        subtitle: 'Best selling - 55% Off',
+        price: paymentLinks.monthPrice,
+        period: 'one time payment',
+        items: [
+          {
+            description: '15.000+ Live TV Channels',
+          },
+          {
+            description: '50,000+ Movies & TV Shows',
+          },
+          {
+            description: 'Premium Adult Channels',
+          },
+          {
+            description: 'PIN-Protected Adult Access',
+          },
+          {
+            description: 'Discrete Billing',
+          },
+          {
+            description: 'TV Guide (EPG)',
+          },
+          {
+            description: 'Support All Devices',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Subscribe Now',
+          href: paymentLinks.monthly,
+        },
+        hasRibbon: true,
+        ribbonTitle: 'POPULAR',
+      },
+      {
+        title: '6 Months Plan',
+        subtitle: 'Best selling - 50% Off',
+        price: paymentLinks.sixMonthsPrice,
+        period: 'one time payment',
+        items: [
+          {
+            description: '15.000+ Live TV Channels',
+          },
+          {
+            description: '50,000+ Movies & TV Shows',
+          },
+          {
+            description: 'Premium Adult Channels',
+          },
+          {
+            description: 'PIN-Protected Adult Access',
+          },
+          {
+            description: 'Discrete Billing',
+          },
+          {
+            description: 'TV Guide (EPG)',
+          },
+          {
+            description: 'Support All Devices',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Subscribe Now',
+          href: paymentLinks.sixMonths,
+        },
+      },
+      {
+        title: '1 Year Plan',
+        subtitle: 'Best selling - 50% Off',
+        price: paymentLinks.oneYearPrice,
+        period: 'one time payment',
+        items: [
+          {
+            description: '15.000+ Live TV Channels',
+          },
+          {
+            description: '50,000+ Movies & TV Shows',
+          },
+          {
+            description: 'Premium Adult Channels',
+          },
+          {
+            description: 'PIN-Protected Adult Access',
+          },
+          {
+            description: 'Discrete Billing',
+          },
+          {
+            description: 'TV Guide (EPG)',
+          },
+          {
+            description: 'Support All Devices',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Subscribe Now',
+          href: paymentLinks.annual,
+        },
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    items={[
+      {
+        title: 'How to Access Adult Content',
+        description:
+          'After subscribing, you will receive your login credentials. In IPTV Smarters Pro, adult channels are organized in a separate category. When you attempt to access adult content, you will be prompted to enter your PIN code for security.',
+      },
+      {
+        title: 'Setting Up PIN Protection',
+        description:
+          'Configure your PIN code through the IPTV Smarters Pro settings. Choose a secure PIN that only you know. You can change your PIN at any time through the app settings for added security.',
+      },
+      {
+        title: 'Privacy and Security',
+        description:
+          'All adult content streams are encrypted and secure. Your viewing history and preferences remain private. We never share your information with third parties, ensuring complete privacy protection.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Secure adult content access',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Complete Privacy Protection</h3>
+      <p class="text-lg text-gray-700 dark:text-slate-300 mb-4">
+        Your privacy is our priority. All adult content access is protected with PIN codes, and billing appears as standard IPTV service. No one will know what content you access - complete discretion guaranteed.
+      </p>
+      <p class="text-lg text-gray-700 dark:text-slate-300">
+        With IPTV Smarters Pro, you have full control over adult content visibility. Hide it completely, restrict access with PIN, or organize it separately - the choice is yours.
+      </p>
+    </Fragment>
+  </Content>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Why Choose Our Adult Content Service"
+    subtitle="Premium features for private adult entertainment streaming"
+    columns={2}
+    items={[
+      {
+        title: 'Complete Privacy',
+        description:
+          'Your adult content viewing remains completely private. PIN protection, discrete billing, and encrypted streaming ensure your privacy is protected at all times.',
+        icon: 'tabler:lock',
+      },
+      {
+        title: 'Premium Quality',
+        description:
+          'Access high-quality adult content in HD and 4K resolution. Premium channels from leading adult entertainment providers worldwide.',
+        icon: 'tabler:device-tv',
+      },
+      {
+        title: 'Easy Access',
+        description:
+          'Simple setup and easy access to adult content. Just enter your PIN when prompted, and enjoy premium adult entertainment on any device.',
+        icon: 'tabler:key',
+      },
+      {
+        title: 'Family Safety',
+        description:
+          'Advanced parental controls allow you to completely hide adult content from family members. Perfect for shared accounts with complete control.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Get Started with Private Adult Content Access"
+    subtitle="Subscribe to IPTV Smarters Pro today and enjoy premium adult content with complete privacy and security. PIN-protected access, discrete billing, and premium quality streaming."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Subscribe Now',
+        href: '/pricing',
+      },
+    ]}
+  />
+</Layout>
+

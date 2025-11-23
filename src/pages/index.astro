@@ -11,92 +11,129 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+import paymentLinks from '~/config/pricing';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'IPTV Smarters Pro: Elevate Your Entertainment Experience | Watch Your Favorites Anywhere',
+  description: 'Discover the ultimate IPTV streaming experience with IPTV Smarters Pro. Watch 15,000+ live TV channels, 50,000+ movies & TV shows on any device. Seamless streaming, user-friendly interface, and endless content options. Try IPTV Smarters Pro today!',
   ignoreTitleTemplate: true,
-};
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'IPTV Smarters Pro: Elevate Your Entertainment Experience',
+    description: 'Watch your favorite shows, movies, and live TV channels on-the-go with IPTV Smarters Pro. 15,000+ channels, 50,000+ movies & TV shows.',
+    type: 'website',
+  },
+}
 ---
 
 <Layout metadata={metadata}>
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IPTV Smarters Pro",
+    "url": "https://iptvsmartproviders.com",
+    "logo": "https://iptvsmartproviders.com/assets/images/logo.jpeg",
+    "description": "IPTV Smarters Pro - Best IPTV service with 15,000+ live TV channels and 50,000+ movies & TV shows",
+    "sameAs": [
+      "https://iptvsmartproviders.com"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+212628096812",
+      "contactType": "customer service",
+      "email": "contact@iptvsmartproviders.com",
+      "availableLanguage": "English"
+    }
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "IPTV Streaming Service",
+    "provider": {
+      "@type": "Organization",
+      "name": "IPTV Smarters Pro"
+    },
+    "areaServed": "Worldwide",
+    "description": "Premium IPTV streaming service with 15,000+ live TV channels, 50,000+ movies and TV shows",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "20",
+      "priceValidUntil": "2025-12-31",
+      "availability": "https://schema.org/InStock"
+    }
+  })} />
   <!-- Hero Widget ******************* -->
 
   <Hero
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
+        text: 'Subscribe',
+        href: '/pricing',
+        icon: 'tabler:arrow-right',
+      },
+      {
+        variant: 'secondary',
+        text: 'Download',
+        href: '#',
         icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'IPTV Smarters Pro - Watch Your Favorites Anywhere' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
+      Elevate Your Entertainment Experience with IPTV Smarters Pro
+      <span class="text-accent dark:text-white">watch Your Favorites Anywhere</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
+        Discover the ultimate experience with Smarters Pro. Watch your favorite shows, movies, and live TV channels on-the-go. Seamless streaming, user-friendly interface, and endless content options. Try IPTV Smarters Pro today!</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <Note title="Note:" description="A Smarter & Sharper Addition to your Apps" />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
     tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    title="WHAT IS IPTV SMARTERS?"
+    subtitle="The IPTV Smarters app is an exceptional video streaming player that enables your IPTV customers or end users to access and enjoy content such as Live TV, VOD, Series, and Catch-up TV, all provided by you. It is compatible with Android and iOS devices. Smart TVs.."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Multi-Device Compatibility',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.Experience crystal-clear HD streaming with IPTV Smarters Pro. Whether you are watching live TV, movies, or on-demand content, enjoy unparalleled picture quality for an immersive viewing experience.',
+        icon: 'tabler:device-tablet',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'User-Friendly Interface',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Navigate through your favorite channels and content effortlessly with IPTV Smarters Pro s intuitive and user-friendly interface. Easily discover new shows, customize your playlists, and access advanced features with just a few clicks.',
+        icon: 'tabler:check',
       },
       {
-        title: 'Best Practices',
+        title: 'HD, 4K Streaming',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Experience crystal-clear HD streaming with IPTV Smarters Pro. Whether you are watching live TV, movies, or on-demand content, enjoy unparalleled picture quality for an immersive viewing experience.',
+        icon: 'tabler:device-tv',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Extensive Content Library',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Access a vast library of entertainment with IPTV Smarters Pro. From live TV channels to on-demand movies and series, discover endless content options to suit every taste and preference.',
+        icon: 'tabler:library',
       },
     ]}
   />
@@ -105,33 +142,33 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Welcome to IPTV Smarters"
+    title="Your go-to destination for hassle-free entertainment"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'Simplify Your Experience',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Navigate with ease and access a world of entertainment at your fingertips. Say goodbye to complexity and hello to simplicity.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Endless Options',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Explore a wide selection of channels, including live TV, sports, and more. There is something for everyone.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Start Today',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Join IPTV Smarters and start enjoying entertainment made easy. <a href="https://iptvsmartproviders.com" class="text-primary dark:text-primary hover:text-primary/80 font-bold" target="_blank">Subscribe Now!</a>',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/iptv-smart.png',
       alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">With our cutting-edge IPTV solution,</h3>
+      accessing your favorite content has never been easier or more enjoyable. Whether you're a sports fanatic, a movie buff, or a TV show enthusiast, we've got you covered.
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,31 +182,26 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Enjoy Secure Streaming',
+        description: `Your gateway to effortless entertainment. Stream securely, explore freely.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Stream Smarters',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Simplify your entertainment with IPTV Smarters. Secure streaming, endless choices.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Discover Ease',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
+          "Navigate easily, stream securely. <a href='https://iptvsmartproviders.com' class=' text-primary dark:text-primary hover:text-primary/80 font-bold' target='_blank'>Join IPTV Smarters today.</a>",
+      }
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      src: '~/assets/images/iptv-smarter.png',
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Simplify your entertainment with IPTV Smarters. Sign up today!</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -178,187 +210,181 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Simplify Your Experience: Easy Steps to Get Started"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Subscribe to Our Service</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          "Subscribe now and gain access to a world of entertainment.",
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Download Our App</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          "Download our app for seamless access to your favorite content.",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Enter Your Activation Codes</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'Enter your activation codes (Xtream codes api) and start enjoying our services.',
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: 'Get Ready to Enjoy`!',
         icon: 'tabler:check',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: '~/assets/images/phone-iptv-smarters.png',
       alt: 'Steps image',
     }}
   />
 
   <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
+<Prices
+title="Iptv Smarters Pro Pricing Plans"
+subtitle="One time payment"
+prices={[
+  {
+    title: '3 Months',
+    subtitle: 'Best selling - 55% Off',
+    price: paymentLinks.threeMonthsPrice,
+    period: 'one time payment',
+    items: [
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        description: '15.000+ Live TV Channels',
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+        description: '50,000+ Movies & TV Shows',
       },
       {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+        description: 'Premium Live TV Channels',
       },
       {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+        description: 'TV Guide (EPG)',
       },
       {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
+        description: 'Support All Devices',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Pay Now',
+      href: paymentLinks.threeMonths,
+    },
+    hasRibbon: true,
+    ribbonTitle: 'POPULAR',
+  },
+  {
+    title: '6 Months',
+    subtitle: 'Best selling - 50% Off',
+    price: paymentLinks.sixMonthsPrice,
+    period: 'one time payment',
+    items: [
+      {
+        description: '15.000+ Live TV Channels',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
+        description: '50,000+ Movies & TV Shows',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
+        description: 'Premium Live TV Channels',
       },
       {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
+        description: 'TV Guide (EPG)',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+        description: 'Support All Devices',
       },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Pay Now',
+      href: paymentLinks.sixMonths,
+    },
+  },
+  {
+    title: '1 Month',
+    subtitle: 'Best selling - 50% Off',
+    price: paymentLinks.monthPrice,
+    period: 'one time payment',
+    items: [
+      {
+        description: '15.000+ Live TV Channels',
+      },
+      {
+        description: '50,000+ Movies & TV Shows',
+      },
+      {
+        description: 'Premium Live TV Channels',
+      },
+      {
+        description: 'TV Guide (EPG)',
+      },
+      {
+        description: 'Support All Devices',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Pay Now',
+      href: paymentLinks.monthly,
+    },
+  }
+]}
+/>
 
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="Latest IPTV Guides & Channel Updates"
+    information={`Stay updated with the latest news, channel additions, and helpful guides about IPTV Smarters Pro. Learn how to make the most of your subscription and discover new features.`
+    }
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    title="Frequently Asked Questions for IPTV SMARTERS PRO"
+    subtitle=" IPTV Smarters Pro is a popular IPTV player that pairs with any IPTV service for an improved streaming experience."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
-        description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-      },
-      {
         title: 'What do I need to start?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          "Subscibe up for iptv smarter pro above. After that, you will get information about username, password and url so you can log in to the smarter iptv app. Once you download the app and log into the app, you can start viewing channels.",
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'How can I install IPTV Smarters Pro on my devices?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Learn the simple steps to download and install IPTV Smarters Pro on your Android, iOS, Smart TV, macOS, or Windows devices.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: "What's something you may find puzzling about IPTV Smarters Pro?",
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "Explore FAQs to unravel any mysteries and optimize your IPTV Smarters Pro experience for seamless streaming.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: "On which devices is it possible to install IPTV Smarters Pro?",
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "This app is compatible with all devices running the Android operating system, which encompasses the Amazon Firestick, Fire TV, and various other Android devices.",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'Is IPTV Smarters Pro Safe?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "Yes, you can confidently install and utilize this application on any Fire TV or Android device without any concerns regarding safety.",
+      },
+      {
+        title: 'Is IPTV Smarters app Legal?',
+        description:
+          "Absolutly Yes. This app is 100% legal to install and use.",
       },
     ]}
   />
@@ -367,10 +393,10 @@ const metadata = {
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'CHANNELS/VODS', amount: '50K+' },
+      { title: 'SATISFIED CLIENTS', amount: '15K+' },
+      { title: 'POSITIVE FEEDBACKS', amount: '1K+' },
+      { title: 'FREEBIES RELEASED', amount: '100%' },
     ]}
   />
 
@@ -380,20 +406,18 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Subscribe Now',
+        href: '/pricing',
+        icon: 'tabler:arrow-right',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Experience Unlimited Entertainment with IPTV Smarters Pro
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Unlock a world of entertainment with IPTV Smarters Pro. Stream your favorite channels, movies, and shows on any device, anytime, anywhere.
     </Fragment>
   </CallToAction>
 </Layout>

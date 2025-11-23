@@ -6,9 +6,20 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import paymentLinks from '~/config/pricing';
 
 const metadata = {
-  title: 'Pricing',
+  title: 'IPTV Smarters Pro Pricing Plans - Best IPTV Service Prices 2024',
+  description: 'Choose the perfect IPTV Smarters Pro pricing plan. One-time payment options: $20/month, $30/3 months, $40/6 months. Access 15,000+ channels, 50,000+ movies & TV shows. Best selling plans with up to 55% off.',
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'IPTV Smarters Pro Pricing Plans - Best IPTV Service 2024',
+    description: 'Affordable IPTV Smarters Pro pricing plans. One-time payment, no recurring fees. Access thousands of channels and on-demand content.',
+    type: 'website',
+  },
 };
 ---
 
@@ -24,87 +35,93 @@ const metadata = {
   <!-- Pricing Widget ******************* -->
 
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="Iptv Smarters Pro Pricing Plans"
+    subtitle="One time payment"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
+        title: '3 Months',
+        subtitle: 'Best selling - 55% Off',
+        price: paymentLinks.threeMonthsPrice,
+        period: 'one time payment',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: '15.000+ Live TV Channels',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: '50,000+ Movies & TV Shows',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
+            description: 'Premium Live TV Channels',
           },
           {
-            description: 'In hac habitasse',
+            description: 'TV Guide (EPG)',
+          },
+          {
+            description: 'Support All Devices',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
-        },
-      },
-      {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
-        items: [
-          {
-            description: 'Proin vel laoreet',
-          },
-          {
-            description: 'Ut efficitur habitasse egestas',
-          },
-          {
-            description: 'Volutpat hac curabitur',
-          },
-          {
-            description: 'Pellentesque blandit ut nibh',
-          },
-          {
-            description: 'Donec fringilla sem',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Pay Now',
+          href: paymentLinks.threeMonths,
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
+        ribbonTitle: 'POPULAR',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: '6 Months',
+        subtitle: 'Best selling - 50% Off',
+        price: paymentLinks.sixMonthsPrice,
+        period: 'one time payment',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: '15.000+ Live TV Channels',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: '50,000+ Movies & TV Shows',
           },
           {
-            description: 'Suspendisse sit amet blandit',
+            description: 'Premium Live TV Channels',
           },
           {
-            description: 'Suspendisse auctor blandit dui',
+            description: 'TV Guide (EPG)',
+          },
+          {
+            description: 'Support All Devices',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Pay Now',
+          href: paymentLinks.sixMonths,
+        },
+      },
+      {
+        title: '1 Month',
+        subtitle: 'Best selling - 50% Off',
+        price: paymentLinks.monthPrice,
+        period: 'one time payment',
+        items: [
+          {
+            description: '15.000+ Live TV Channels',
+          },
+          {
+            description: '50,000+ Movies & TV Shows',
+          },
+          {
+            description: 'Premium Live TV Channels',
+          },
+          {
+            description: 'TV Guide (EPG)',
+          },
+          {
+            description: 'Support All Devices',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Pay Now',
+          href: paymentLinks.monthly,
         },
       },
     ]}
@@ -155,35 +172,35 @@ const metadata = {
 
   <Steps
     title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    tagline="SIMPLIFIED PROCESS"
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
+        title: 'Subscribe to a plan',
         icon: 'tabler:number-1',
       },
       {
-        title: 'Select a plan',
+        title: 'Then Pay',
         icon: 'tabler:number-2',
       },
       {
-        title: 'Sign Up / Log In',
+        title: 'Enter your details (Email, phone number, etc.)',
         icon: 'tabler:number-3',
       },
       {
-        title: 'Review order',
+        title: 'Don\'t forget to check you INBOX or Junk/Spam folder.',
         icon: 'tabler:number-4',
       },
       {
-        title: 'Enter payment details',
+        title: 'You will receive your (Username, Password, etc.)',
         icon: 'tabler:number-5',
       },
       {
-        title: 'Confirmation',
+        title: 'Download And Install the app',
         icon: 'tabler:number-6',
       },
       {
-        title: 'Download and start using the template(s)',
+        title: 'Enter details you received in your email and enjoy the service.',
         icon: 'tabler:number-7',
       },
     ]}
@@ -191,48 +208,22 @@ const metadata = {
       src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
       alt: 'Steps image',
     }}
+    classes={{
+      items: {
+        icon: 'text-white bg-purple-600 border-purple-600 dark:bg-purple-600 dark:border-purple-600',
+      },
+    }}
   />
 
   <!-- FAQs Widget ******************* -->
 
-  <FAQs
-    title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
-    columns={1}
-    items={[
-      {
-        title: 'Do the plans come with customer support?',
-        description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
-      },
-      {
-        title: 'Is there a trial period for the different plans?',
-        description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
-      },
-      {
-        title: 'Can I switch between plans?',
-        description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
-      },
-      {
-        title: 'What payment methods do you accept?',
-        description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
-      },
-      {
-        title: 'Are there any hidden fees beyond the displayed cost?',
-        description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
-      },
-    ]}
-  />
+ 
 
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="Experience Unlimited Entertainment with IPTV Smarters Pro"
+    subtitle="Unlock a world of entertainment with IPTV Smarters Pro. Stream your favorite channels, movies, and shows on any device, anytime, anywhere."
     actions={[
       {
         variant: 'primary',
