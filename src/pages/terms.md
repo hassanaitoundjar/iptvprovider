@@ -1,5 +1,21 @@
 ---
-title: 'Terms and Conditions'
+title: 'Terms and Conditions - IPTV Smarters Pro'
+description: 'IPTV Smarters Pro Terms and Conditions. Read our terms of service, usage policies, and legal terms for using our IPTV service.'
+keywords: [
+  'iptv terms and conditions',
+  'iptv terms of service',
+  'iptv user agreement',
+  'iptv service terms',
+  'iptv legal terms',
+  'iptv terms of use',
+  'iptv conditions',
+  'iptv provider terms',
+  'iptv subscription terms',
+  'iptv service agreement',
+  'iptv usage terms',
+  'iptv legal agreement',
+  'iptv terms policy',
+]
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 

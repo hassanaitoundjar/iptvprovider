@@ -1,0 +1,321 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Button from '~/components/ui/Button.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'Download IPTV Smarters Pro App - Android, iOS, Windows, Mac, Smart TV',
+  description:
+    'Download IPTV Smarters Pro app for Android, iOS, Windows, Mac, Linux, Smart TV, Firestick, and more. Free download with easy installation guide. Start streaming in minutes!',
+  keywords: [
+    'iptv app download',
+    'iptv smarters pro download',
+    'iptv for android',
+    'iptv for ios',
+    'iptv for firestick',
+    'iptv for smart tv',
+    'iptv for windows',
+    'iptv for mac',
+    'iptv apk download',
+    'iptv player download',
+    'iptv app android',
+    'iptv app ios',
+    'iptv app firestick',
+    'iptv app samsung tv',
+    'iptv app lg tv',
+    'iptv app roku',
+    'iptv installation guide',
+    'iptv setup guide',
+    'how to install iptv',
+    'iptv app free download',
+    'iptv smarters pro apk',
+    'iptv smarters pro ios',
+    'iptv smarters pro windows',
+    'iptv smarters pro mac',
+    'iptv smarters pro firestick',
+    'iptv download link',
+    'iptv app store',
+    'iptv google play',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Download IPTV Smarters Pro - All Devices Supported',
+    description:
+      'Download IPTV Smarters Pro app for all your devices. Compatible with Android, iOS, Windows, Mac, Smart TV, and more.',
+    type: 'website',
+  },
+};
+
+const downloadLinks = [
+  {
+    id: 'android',
+    name: 'Android',
+    icon: 'tabler:brand-android',
+    description: 'Download for Android phones and tablets',
+    links: [
+      { text: 'Download APK', href: 'https://play.google.com/store/apps/details?id=com.nst.iptvsmarterstv', target: '_blank' },
+      { text: 'Direct APK', href: '#', target: '_blank' },
+    ],
+  },
+  {
+    id: 'ios',
+    name: 'iOS (iPhone/iPad)',
+    icon: 'tabler:brand-apple',
+    description: 'Download from App Store',
+    links: [
+      { text: 'App Store', href: 'https://apps.apple.com/app/iptv-smarters-pro/id1220941012', target: '_blank' },
+    ],
+  },
+  {
+    id: 'windows',
+    name: 'Windows',
+    icon: 'tabler:brand-windows',
+    description: 'Download for Windows PC',
+    links: [
+      { text: 'Download for Windows', href: '#', target: '_blank' },
+    ],
+  },
+  {
+    id: 'mac',
+    name: 'macOS',
+    icon: 'tabler:brand-apple',
+    description: 'Download for Mac',
+    links: [
+      { text: 'Download for Mac', href: '#', target: '_blank' },
+    ],
+  },
+  {
+    id: 'firestick',
+    name: 'Amazon Fire TV / Firestick',
+    icon: 'tabler:device-tv',
+    description: 'Install on Firestick and Fire TV',
+    links: [
+      { text: 'Download APK', href: '#', target: '_blank' },
+    ],
+  },
+  {
+    id: 'smarttv',
+    name: 'Smart TV (Samsung, LG)',
+    icon: 'tabler:device-tv',
+    description: 'Install on Samsung and LG Smart TVs',
+    links: [
+      { text: 'Samsung TV Store', href: '#', target: '_blank' },
+      { text: 'LG Content Store', href: '#', target: '_blank' },
+    ],
+  },
+  {
+    id: 'roku',
+    name: 'Roku',
+    icon: 'tabler:device-tv',
+    description: 'Install on Roku devices',
+    links: [
+      { text: 'Roku Channel Store', href: '#', target: '_blank' },
+    ],
+  },
+];
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText
+    tagline="Download"
+    title="Download IPTV Smarters Pro App"
+    subtitle="Get the IPTV Smarters Pro app for all your devices. Available for Android, iOS, Windows, Mac, Smart TV, Firestick, and more. Start streaming your favorite content today!"
+  />
+
+  <!-- Download Links Section ************** -->
+
+  <section class="py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {downloadLinks.map((platform) => (
+          <div
+            id={platform.id}
+            class="group rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-gray-700 dark:bg-gray-800"
+          >
+            <div class="mb-4 flex items-center gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary dark:bg-primary/20">
+                <Icon name={platform.icon} class="h-6 w-6" />
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">{platform.name}</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">{platform.description}</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2">
+              {platform.links.map((link) => (
+                <Button
+                  variant="primary"
+                  href={link.href}
+                  target={link.target}
+                  text={link.text}
+                  icon="tabler:download"
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Why Choose IPTV Smarters Pro?"
+    subtitle="Experience the best IPTV streaming app with powerful features and seamless performance"
+    columns={3}
+    items={[
+      {
+        title: 'Multi-Device Support',
+        description:
+          'Download and use IPTV Smarters Pro on Android, iOS, Windows, Mac, Smart TV, Firestick, and more. One subscription works on all devices.',
+        icon: 'tabler:devices',
+      },
+      {
+        title: 'Easy Installation',
+        description:
+          'Simple installation process for all platforms. Follow our step-by-step guides to get started in minutes.',
+        icon: 'tabler:download',
+      },
+      {
+        title: 'User-Friendly Interface',
+        description:
+          'Intuitive and easy-to-navigate interface. Find your favorite channels and content with ease.',
+        icon: 'tabler:layout-dashboard',
+      },
+      {
+        title: 'HD & 4K Streaming',
+        description:
+          'Enjoy crystal-clear HD and 4K quality streaming. Experience your favorite shows and movies in stunning detail.',
+        icon: 'tabler:device-tv',
+      },
+      {
+        title: 'EPG TV Guide',
+        description:
+          'Access Electronic Program Guide (EPG) to see whats on now and whats coming up on all your favorite channels.',
+        icon: 'tabler:calendar',
+      },
+      {
+        title: 'VOD & Series',
+        description:
+          'Access thousands of movies and TV series on-demand. Watch what you want, when you want.',
+        icon: 'tabler:movie',
+      },
+      {
+        title: 'Catch-Up TV',
+        description:
+          'Never miss your favorite shows. Watch programs from the past 7 days with our catch-up feature.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Parental Control',
+        description:
+          'Keep your family safe with built-in parental controls. Restrict access to adult content easily.',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: '24/7 Support',
+        description:
+          'Get help whenever you need it. Our support team is available 24/7 to assist with installation and setup.',
+        icon: 'tabler:headset',
+      },
+    ]}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="How to Install IPTV Smarters Pro"
+    tagline="INSTALLATION GUIDE"
+    items={[
+      {
+        title: 'Step 1: Download the App',
+        description:
+          'Choose your device platform above and click the download button. The app will download to your device.',
+        icon: 'tabler:download',
+      },
+      {
+        title: 'Step 2: Install the App',
+        description:
+          'For Android/Firestick: Enable "Install from Unknown Sources" in settings, then install the APK file. For iOS: Install from App Store. For Windows/Mac: Run the installer.',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Step 3: Open the App',
+        description:
+          'Launch IPTV Smarters Pro from your device. You will see the login screen where you can enter your credentials.',
+        icon: 'tabler:device-mobile',
+      },
+      {
+        title: 'Step 4: Enter Your Credentials',
+        description:
+          'Enter your Xtream Codes API credentials (username, password, and server URL) that you received after subscribing to our service.',
+        icon: 'tabler:key',
+      },
+      {
+        title: 'Step 5: Start Streaming',
+        description:
+          'Once logged in, browse through thousands of channels, movies, and TV shows. Start enjoying your favorite content!',
+        icon: 'tabler:play',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/phone-iptv-smarters.png',
+      alt: 'IPTV Smarters Pro Installation Guide',
+    }}
+  />
+
+  <!-- Additional Information Section -->
+
+  <section class="py-16 md:py-24">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6">
+      <div class="rounded-lg border border-gray-200 bg-gray-50 p-8 dark:border-gray-700 dark:bg-gray-800">
+        <h2 class="mb-4 text-2xl font-bold text-gray-900 dark:text-white">System Requirements</h2>
+        <div class="space-y-4 text-gray-700 dark:text-gray-300">
+          <div>
+            <h3 class="mb-2 font-semibold text-gray-900 dark:text-white">Android</h3>
+            <p>Android 5.0 (Lollipop) or higher, 2GB RAM minimum, 50MB free storage space</p>
+          </div>
+          <div>
+            <h3 class="mb-2 font-semibold text-gray-900 dark:text-white">iOS</h3>
+            <p>iOS 11.0 or higher, iPhone 5s or later, iPad (all models), 50MB free storage space</p>
+          </div>
+          <div>
+            <h3 class="mb-2 font-semibold text-gray-900 dark:text-white">Windows</h3>
+            <p>Windows 7 or higher, 2GB RAM, 100MB free storage space</p>
+          </div>
+          <div>
+            <h3 class="mb-2 font-semibold text-gray-900 dark:text-white">macOS</h3>
+            <p>macOS 10.12 or higher, 2GB RAM, 100MB free storage space</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+
+  <section class="py-16 md:py-24">
+    <div class="mx-auto max-w-4xl px-4 text-center sm:px-6">
+      <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">
+        Ready to Start Streaming?
+      </h2>
+      <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">
+        Download the app and subscribe to our service to access 15,000+ live TV channels and 50,000+ movies & TV shows.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <Button variant="primary" href="/pricing" text="Subscribe Now" icon="tabler:arrow-right" />
+        <Button variant="secondary" href="/contact" text="Get Support" icon="tabler:headset" />
+      </div>
+    </div>
+  </section>
+</Layout>
+

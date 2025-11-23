@@ -20,6 +20,10 @@ export const headerData = {
       href: '/pricing',
     },
     {
+      text: 'Download',
+      href: '/download',
+    },
+    {
       text: 'Adult Content',
       href: '/adult-content',
     },
@@ -41,6 +45,7 @@ export const footerData = {
         { text: 'Contact Us', href: '/contact' },
         { text: 'Privacy', href: '/privacy' },
         { text: 'Pricing', href: '/pricing' },
+        { text: 'Download', href: '/download' },
         { text: 'Adult Content', href: '/adult-content' },
         { text: 'Blog', href: '/blog' },
       ],
@@ -48,11 +53,13 @@ export const footerData = {
     {
       title: 'download',
       links: [
-        { text: 'android', href: '#' },
-        { text: 'ios', href: '#' },
-        { text: 'windows', href: '#' },
-        { text: 'mac', href: '#' },
-        { text: 'linux', href: '#' },
+        { text: 'Download App', href: '/download' },
+        { text: 'Android', href: '/download#android' },
+        { text: 'iOS', href: '/download#ios' },
+        { text: 'Windows', href: '/download#windows' },
+        { text: 'Mac', href: '/download#mac' },
+        { text: 'Firestick', href: '/download#firestick' },
+        { text: 'Smart TV', href: '/download#smarttv' },
       ],
     },
 
@@ -75,6 +82,6 @@ export const footerData = {
     { ariaLabel: 'rss', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="#"> Arthelokyo</a> · All rights reserved.
+    © 2024 IPTV Smarters Pro. All rights reserved.
   `,
 };

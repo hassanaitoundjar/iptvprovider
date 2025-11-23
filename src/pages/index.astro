@@ -17,6 +17,38 @@ const metadata = {
   title: 'IPTV Smarters Pro: Elevate Your Entertainment Experience',
   description:
     'Discover the ultimate way to stream your favorite shows and movies with IPTV Smarters Pro. Enjoy seamless entertainment anytime, anywhere. Try now!',
+  keywords: [
+    'iptv smarters pro',
+    'iptv service',
+    'best iptv',
+    'iptv streaming',
+    'iptv subscription',
+    'premium iptv',
+    'iptv channels',
+    'iptv app',
+    'iptv player',
+    'iptv providers',
+    'iptv smarters',
+    'smart iptv',
+    'iptv pro',
+    'iptv for firestick',
+    'iptv for android',
+    'iptv for smart tv',
+    'cheap iptv',
+    'iptv trial',
+    'xtream codes',
+    'iptv m3u',
+    'live tv streaming',
+    'iptv service provider',
+    'best iptv service 2025',
+    'iptv subscription plans',
+    'iptv channels list',
+    'iptv movies',
+    'iptv tv shows',
+    'iptv epg',
+    'iptv catch up',
+    'iptv vod',
+  ],
   ignoreTitleTemplate: true,
   robots: {
     index: true,
@@ -86,7 +118,7 @@ const metadata = {
       {
         variant: 'secondary',
         text: 'Download',
-        href: '#',
+        href: '/download',
         icon: 'tabler:download',
       },
     ]}
@@ -256,9 +288,9 @@ const metadata = {
     subtitle="One time payment"
     prices={[
       {
-        title: '3 Months',
+        title: 'Monthly',
         subtitle: 'Best selling - 55% Off',
-        price: paymentLinks.threeMonthsPrice,
+        price: paymentLinks.monthPrice,
         period: 'one time payment',
         items: [
           {
@@ -280,7 +312,7 @@ const metadata = {
         callToAction: {
           target: '_blank',
           text: 'Pay Now',
-          href: paymentLinks.threeMonths,
+          href: paymentLinks.monthly,
         },
         hasRibbon: true,
         ribbonTitle: 'POPULAR',
@@ -314,9 +346,9 @@ const metadata = {
         },
       },
       {
-        title: '1 Month',
+        title: '1 Year',
         subtitle: 'Best selling - 50% Off',
-        price: paymentLinks.monthPrice,
+        price: paymentLinks.oneYearPrice,
         period: 'one time payment',
         items: [
           {
@@ -338,7 +370,7 @@ const metadata = {
         callToAction: {
           target: '_blank',
           text: 'Pay Now',
-          href: paymentLinks.monthly,
+          href: paymentLinks.annual,
         },
       },
     ]}
