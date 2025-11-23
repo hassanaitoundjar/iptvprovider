@@ -40,7 +40,6 @@ export const footerData = {
         { text: 'Home', href: '/' },
         { text: 'About', href: '/about' },
         { text: 'Contact Us', href: '/contact' },
-        { text: 'Terms', href: '/terms' },
         { text: 'Privacy', href: '/privacy' },
         { text: 'Pricing', href: '/pricing' },
         { text: 'Adult Content', href: '/adult-content' },
