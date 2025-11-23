@@ -5,7 +5,7 @@
 
 const paymentLinks = {
   // Monthly plan payment link
-  
+
   monthPrice: '18.95',
   monthly: 'https://shoppy.gg/product/mucg2Rp',
 

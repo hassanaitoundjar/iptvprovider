@@ -24,17 +24,20 @@
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/hassanaitoundjar/iptvprovider.git
 cd iptvprovider
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -96,6 +99,7 @@ npm run dev
 Basic configuration file: `./src/config.yaml`
 
 Key settings:
+
 - Site name and URL
 - SEO metadata
 - Blog configuration
@@ -104,6 +108,7 @@ Key settings:
 ## 📱 Download IPTV Smarters Pro App
 
 Download the app for your device:
+
 - [Android](https://play.google.com/store/apps/details?id=com.nst.iptvsmarterstv)
 - [iOS](https://apps.apple.com/app/iptv-smarters-pro/id1220941012)
 - Windows, Mac, Smart TV, Firestick, and more
@@ -113,6 +118,7 @@ Visit our [Download Page](/download) for all platforms and installation guides.
 ## 💰 Pricing Plans
 
 Choose the perfect plan for you:
+
 - **1 Month** - $20 (one-time payment)
 - **3 Months** - $30 (one-time payment, 55% off)
 - **6 Months** - $40 (one-time payment, 50% off)
@@ -147,6 +153,7 @@ The easiest way to deploy is using [Vercel](https://vercel.com):
 ### Manual Deployment
 
 1. Build the project:
+
 ```bash
 npm run build
 ```

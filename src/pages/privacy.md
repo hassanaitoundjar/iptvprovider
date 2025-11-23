@@ -1,22 +1,23 @@
 ---
 title: 'Privacy Policy - IPTV Smarters Pro'
 description: 'IPTV Smarters Pro Privacy Policy. Learn how we collect, use, and protect your personal information. Your privacy is important to us.'
-keywords: [
-  'iptv privacy policy',
-  'iptv data protection',
-  'iptv privacy',
-  'iptv data security',
-  'iptv personal information',
-  'iptv privacy rights',
-  'iptv data collection',
-  'iptv cookie policy',
-  'iptv user privacy',
-  'iptv service privacy',
-  'iptv provider privacy',
-  'iptv privacy protection',
-  'iptv data privacy',
-  'iptv information security',
-]
+keywords:
+  [
+    'iptv privacy policy',
+    'iptv data protection',
+    'iptv privacy',
+    'iptv data security',
+    'iptv personal information',
+    'iptv privacy rights',
+    'iptv data collection',
+    'iptv cookie policy',
+    'iptv user privacy',
+    'iptv service privacy',
+    'iptv provider privacy',
+    'iptv privacy protection',
+    'iptv data privacy',
+    'iptv information security',
+  ]
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 

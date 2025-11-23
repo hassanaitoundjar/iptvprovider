@@ -59,7 +59,11 @@ const downloadLinks = [
     icon: 'tabler:brand-android',
     description: 'Download for Android phones and tablets',
     links: [
-      { text: 'Download APK', href: 'https://play.google.com/store/apps/details?id=com.nst.iptvsmarterstv', target: '_blank' },
+      {
+        text: 'Download APK',
+        href: 'https://play.google.com/store/apps/details?id=com.nst.iptvsmarterstv',
+        target: '_blank',
+      },
       { text: 'Direct APK', href: '#', target: '_blank' },
     ],
   },
@@ -68,36 +72,28 @@ const downloadLinks = [
     name: 'iOS (iPhone/iPad)',
     icon: 'tabler:brand-apple',
     description: 'Download from App Store',
-    links: [
-      { text: 'App Store', href: 'https://apps.apple.com/app/iptv-smarters-pro/id1220941012', target: '_blank' },
-    ],
+    links: [{ text: 'App Store', href: 'https://apps.apple.com/app/iptv-smarters-pro/id1220941012', target: '_blank' }],
   },
   {
     id: 'windows',
     name: 'Windows',
     icon: 'tabler:brand-windows',
     description: 'Download for Windows PC',
-    links: [
-      { text: 'Download for Windows', href: '#', target: '_blank' },
-    ],
+    links: [{ text: 'Download for Windows', href: '#', target: '_blank' }],
   },
   {
     id: 'mac',
     name: 'macOS',
     icon: 'tabler:brand-apple',
     description: 'Download for Mac',
-    links: [
-      { text: 'Download for Mac', href: '#', target: '_blank' },
-    ],
+    links: [{ text: 'Download for Mac', href: '#', target: '_blank' }],
   },
   {
     id: 'firestick',
     name: 'Amazon Fire TV / Firestick',
     icon: 'tabler:device-tv',
     description: 'Install on Firestick and Fire TV',
-    links: [
-      { text: 'Download APK', href: '#', target: '_blank' },
-    ],
+    links: [{ text: 'Download APK', href: '#', target: '_blank' }],
   },
   {
     id: 'smarttv',
@@ -114,9 +110,7 @@ const downloadLinks = [
     name: 'Roku',
     icon: 'tabler:device-tv',
     description: 'Install on Roku devices',
-    links: [
-      { text: 'Roku Channel Store', href: '#', target: '_blank' },
-    ],
+    links: [{ text: 'Roku Channel Store', href: '#', target: '_blank' }],
   },
 ];
 ---
@@ -135,33 +129,35 @@ const downloadLinks = [
   <section class="py-16 md:py-24">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {downloadLinks.map((platform) => (
-          <div
-            id={platform.id}
-            class="group rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-gray-700 dark:bg-gray-800"
-          >
-            <div class="mb-4 flex items-center gap-3">
-              <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary dark:bg-primary/20">
-                <Icon name={platform.icon} class="h-6 w-6" />
+        {
+          downloadLinks.map((platform) => (
+            <div
+              id={platform.id}
+              class="group rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-gray-700 dark:bg-gray-800"
+            >
+              <div class="mb-4 flex items-center gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary dark:bg-primary/20">
+                  <Icon name={platform.icon} class="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 dark:text-white">{platform.name}</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">{platform.description}</p>
+                </div>
               </div>
-              <div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white">{platform.name}</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">{platform.description}</p>
+              <div class="flex flex-col gap-2">
+                {platform.links.map((link) => (
+                  <Button
+                    variant="primary"
+                    href={link.href}
+                    target={link.target}
+                    text={link.text}
+                    icon="tabler:download"
+                  />
+                ))}
               </div>
             </div>
-            <div class="flex flex-col gap-2">
-              {platform.links.map((link) => (
-                <Button
-                  variant="primary"
-                  href={link.href}
-                  target={link.target}
-                  text={link.text}
-                  icon="tabler:download"
-                />
-              ))}
-            </div>
-          </div>
-        ))}
+          ))
+        }
       </div>
     </div>
   </section>
@@ -187,8 +183,7 @@ const downloadLinks = [
       },
       {
         title: 'User-Friendly Interface',
-        description:
-          'Intuitive and easy-to-navigate interface. Find your favorite channels and content with ease.',
+        description: 'Intuitive and easy-to-navigate interface. Find your favorite channels and content with ease.',
         icon: 'tabler:layout-dashboard',
       },
       {
@@ -205,20 +200,17 @@ const downloadLinks = [
       },
       {
         title: 'VOD & Series',
-        description:
-          'Access thousands of movies and TV series on-demand. Watch what you want, when you want.',
+        description: 'Access thousands of movies and TV series on-demand. Watch what you want, when you want.',
         icon: 'tabler:movie',
       },
       {
         title: 'Catch-Up TV',
-        description:
-          'Never miss your favorite shows. Watch programs from the past 7 days with our catch-up feature.',
+        description: 'Never miss your favorite shows. Watch programs from the past 7 days with our catch-up feature.',
         icon: 'tabler:clock',
       },
       {
         title: 'Parental Control',
-        description:
-          'Keep your family safe with built-in parental controls. Restrict access to adult content easily.',
+        description: 'Keep your family safe with built-in parental controls. Restrict access to adult content easily.',
         icon: 'tabler:shield-lock',
       },
       {
@@ -305,9 +297,7 @@ const downloadLinks = [
 
   <section class="py-16 md:py-24">
     <div class="mx-auto max-w-4xl px-4 text-center sm:px-6">
-      <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">
-        Ready to Start Streaming?
-      </h2>
+      <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Ready to Start Streaming?</h2>
       <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">
         Download the app and subscribe to our service to access 15,000+ live TV channels and 50,000+ movies & TV shows.
       </p>
@@ -318,4 +308,3 @@ const downloadLinks = [
     </div>
   </section>
 </Layout>
-
