@@ -39,7 +39,6 @@ export const footerData = {
       links: [
         { text: 'Home', href: '/' },
         { text: 'About', href: '/about' },
-        { text: 'Team', href: '/team' },
         { text: 'Contact Us', href: '/contact' },
         { text: 'Terms', href: '/terms' },
         { text: 'Privacy', href: '/privacy' },
