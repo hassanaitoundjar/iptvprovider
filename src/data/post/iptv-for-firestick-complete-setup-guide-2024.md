@@ -22,6 +22,7 @@ Amazon Fire TV Stick is one of the most popular devices for streaming IPTV conte
 ## Why Use Firestick for IPTV?
 
 ### Advantages
+
 - **Affordable**: Cost-effective streaming device
 - **Easy Setup**: Simple installation process
 - **Good Performance**: Smooth streaming experience
@@ -32,6 +33,7 @@ Amazon Fire TV Stick is one of the most popular devices for streaming IPTV conte
 ## Prerequisites
 
 Before you begin, make sure you have:
+
 - Amazon Fire TV Stick (any generation)
 - Active IPTV subscription
 - Stable internet connection (minimum 25 Mbps)
@@ -77,6 +79,7 @@ Before you begin, make sure you have:
 Some regions have IPTV Smarters Pro in the Appstore.
 
 ### Steps:
+
 1. Go to **Search** on Firestick
 2. Type "IPTV Smarters Pro"
 3. If available, select and install
@@ -97,6 +100,7 @@ Some regions have IPTV Smarters Pro in the Appstore.
 ### Step 3: Enter Credentials
 
 Enter your IPTV service details:
+
 - **Username**: Your IPTV username
 - **Password**: Your IPTV password
 - **Server URL**: Your IPTV server URL (e.g., `http://server.com:8080`)
@@ -115,6 +119,7 @@ Enter your IPTV service details:
 ### 1. Clear Cache Regularly
 
 **How to Clear Cache:**
+
 1. Go to **Settings** > **Applications**
 2. Select **Manage Installed Applications**
 3. Find **IPTV Smarters Pro**
@@ -124,12 +129,14 @@ Enter your IPTV service details:
 ### 2. Free Up Storage
 
 **Check Storage:**
+
 1. Go to **Settings** > **Applications**
 2. Select **Manage Installed Applications**
 3. Check storage usage
 4. Uninstall unused apps
 
 **Minimum Storage:**
+
 - Keep at least 1-2 GB free
 - Firestick has limited storage
 - Regularly clean up
@@ -137,12 +144,14 @@ Enter your IPTV service details:
 ### 3. Use Ethernet Adapter (Recommended)
 
 **Benefits:**
+
 - More stable connection
 - Faster speeds
 - No Wi-Fi interference
 - Better for 4K streaming
 
 **How to Set Up:**
+
 1. Purchase Firestick Ethernet adapter
 2. Connect adapter to Firestick
 3. Connect Ethernet cable
@@ -151,6 +160,7 @@ Enter your IPTV service details:
 ### 4. Keep Firestick Updated
 
 **Update Fire OS:**
+
 1. Go to **Settings** > **My Fire TV**
 2. Select **About**
 3. Check for updates
@@ -159,6 +169,7 @@ Enter your IPTV service details:
 ### 5. Restart Regularly
 
 **How to Restart:**
+
 1. Hold **Home** button on remote
 2. Select **Settings**
 3. Choose **Restart**
@@ -169,6 +180,7 @@ Enter your IPTV service details:
 ### Issue 1: App Won't Install
 
 **Solutions:**
+
 - Ensure "Unknown Sources" is enabled
 - Check internet connection
 - Try different download method
@@ -178,6 +190,7 @@ Enter your IPTV service details:
 ### Issue 2: App Crashes
 
 **Solutions:**
+
 - Clear app cache and data
 - Reinstall the app
 - Update Fire OS
@@ -187,6 +200,7 @@ Enter your IPTV service details:
 ### Issue 3: Buffering Issues
 
 **Solutions:**
+
 - Check internet speed (minimum 25 Mbps)
 - Use Ethernet adapter
 - Clear cache
@@ -198,6 +212,7 @@ Enter your IPTV service details:
 ### Issue 4: Can't Login
 
 **Solutions:**
+
 - Verify credentials are correct
 - Check server URL format
 - Ensure subscription is active
@@ -207,6 +222,7 @@ Enter your IPTV service details:
 ### Issue 5: Channels Not Loading
 
 **Solutions:**
+
 - Wait a few seconds for channel to load
 - Try different channels
 - Check internet connection
@@ -216,6 +232,7 @@ Enter your IPTV service details:
 ### Issue 6: Remote Control Issues
 
 **Solutions:**
+
 - Replace batteries
 - Re-pair remote
 - Use Fire TV app on phone
@@ -248,24 +265,28 @@ Clear cache weekly, restart monthly.
 ## Firestick Models Comparison
 
 ### Fire TV Stick (1st Gen)
+
 - Basic model
 - HD streaming
 - May struggle with 4K
 - Still works for IPTV
 
 ### Fire TV Stick (2nd Gen)
+
 - Improved performance
 - Better Wi-Fi
 - HD and some 4K
 - Good for IPTV
 
 ### Fire TV Stick 4K
+
 - 4K Ultra HD support
 - Better processor
 - HDR support
 - Best for IPTV
 
 ### Fire TV Stick 4K Max
+
 - Latest model
 - Best performance
 - Wi-Fi 6 support
@@ -276,18 +297,21 @@ Clear cache weekly, restart monthly.
 While IPTV Smarters Pro is recommended, other options include:
 
 ### TiviMate
+
 - Android TV optimized
 - Advanced features
 - Paid app
 - Android only
 
 ### Perfect Player
+
 - Lightweight
 - Simple interface
 - Free
 - Basic features
 
 ### Kodi
+
 - Highly customizable
 - Free and open-source
 - Complex setup
@@ -298,6 +322,7 @@ While IPTV Smarters Pro is recommended, other options include:
 ### Navigation Tips
 
 **Remote Control:**
+
 - **Up/Down**: Navigate menus
 - **Left/Right**: Browse channels
 - **Select**: Choose option
@@ -305,6 +330,7 @@ While IPTV Smarters Pro is recommended, other options include:
 - **Home**: Return to Firestick home
 
 **Voice Control:**
+
 - Hold microphone button
 - Say channel name
 - Navigate hands-free
@@ -312,21 +338,25 @@ While IPTV Smarters Pro is recommended, other options include:
 ### Features to Use
 
 **Favorites:**
+
 - Mark favorite channels
 - Quick access
 - Organize by category
 
 **EPG:**
+
 - View program guide
 - See what's on
 - Plan viewing
 
 **Search:**
+
 - Find channels quickly
 - Search by name
 - Filter by category
 
 **VOD:**
+
 - Access movie library
 - Watch TV series
 - On-demand content
@@ -336,6 +366,7 @@ While IPTV Smarters Pro is recommended, other options include:
 ### 1. Use VPN (Optional)
 
 Consider VPN for:
+
 - Privacy protection
 - Bypass geo-restrictions
 - Enhanced security
@@ -357,6 +388,7 @@ Only install from trusted sources.
 ### Speed Up Firestick
 
 **Methods:**
+
 1. Clear cache regularly
 2. Uninstall unused apps
 3. Use Ethernet adapter
@@ -366,6 +398,7 @@ Only install from trusted sources.
 ### Improve Streaming
 
 **Tips:**
+
 1. Use wired connection
 2. Optimize video quality
 3. Close background apps
@@ -377,6 +410,7 @@ Only install from trusted sources.
 Setting up IPTV on Firestick is straightforward with IPTV Smarters Pro. Follow this guide step-by-step, and you'll be streaming thousands of channels in no time. The Firestick is an excellent device for IPTV streaming, offering good performance at an affordable price.
 
 **Related Guides:**
+
 - [How to Login Xtream Codes API on IPTV Smarters Pro](/how-to-login-xtream-codes-api-iptv-smarters-pro)
 - [How to Fix IPTV Buffering Issues](/how-to-fix-iptv-buffering-issues-complete-troubleshooting-guide)
 - [Top 5 Tips for Optimizing Your IPTV Experience](/top-5-tips-optimizing-iptv-experience)
@@ -387,4 +421,3 @@ Enjoy streaming IPTV on your Firestick!
 ---
 
 **Ready to get started?** Follow this guide to install IPTV Smarters Pro on your Firestick and begin streaming today!
-

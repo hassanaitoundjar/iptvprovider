@@ -25,9 +25,11 @@ Xtream Codes API is a protocol used by many IPTV service providers to deliver co
 ## Prerequisites
 
 Before you begin, make sure you have:
+
 - IPTV Smarters Pro installed on your device
 
 > **Haven't installed IPTV Smarters Pro yet?** Check out our installation guides:
+>
 > - [How to Install and Use IPTV Smarters Pro on Samsung Smart TV and LG Smart TV](/how-to-install-iptv-smarters-pro-samsung-lg-smart-tv)
 > - [How to Install and Watch IPTV on Roku](/how-to-install-watch-iptv-on-roku)
 
@@ -86,6 +88,7 @@ Fill in the required fields:
 ## Login Format Examples
 
 ### Standard Format
+
 ```
 Username: your_username
 Password: your_password
@@ -93,6 +96,7 @@ Server URL: http://your-server.com:8080
 ```
 
 ### HTTPS Format
+
 ```
 Username: your_username
 Password: your_password
@@ -100,6 +104,7 @@ Server URL: https://your-server.com:25463
 ```
 
 ### With Port Number
+
 ```
 Username: your_username
 Password: your_password
@@ -111,11 +116,13 @@ Server URL: http://iptv.example.com:1234
 ### "Invalid Credentials" Error
 
 **Possible Causes:**
+
 - Incorrect username or password
 - Server URL is wrong
 - Account expired or suspended
 
 **Solutions:**
+
 - Double-check all credentials with your IPTV provider
 - Verify your subscription is active
 - Try copying and pasting credentials to avoid typos
@@ -123,11 +130,13 @@ Server URL: http://iptv.example.com:1234
 ### "Connection Failed" Error
 
 **Possible Causes:**
+
 - Server URL is incorrect
 - Internet connection issues
 - Server is down or maintenance
 
 **Solutions:**
+
 - Verify the server URL format is correct
 - Check your internet connection
 - Contact your IPTV provider to confirm server status
@@ -136,11 +145,13 @@ Server URL: http://iptv.example.com:1234
 ### "Timeout" Error
 
 **Possible Causes:**
+
 - Slow internet connection
 - Server overloaded
 - Firewall blocking connection
 
 **Solutions:**
+
 - Check your internet speed
 - Try again later if server is busy
 - Check firewall/VPN settings
@@ -149,11 +160,13 @@ Server URL: http://iptv.example.com:1234
 ### App Crashes During Login
 
 **Possible Causes:**
+
 - App version is outdated
 - Device compatibility issues
 - Corrupted app data
 
 **Solutions:**
+
 - Update IPTV Smarters Pro to the latest version
 - Clear app cache and data
 - Reinstall the app if necessary
@@ -162,12 +175,14 @@ Server URL: http://iptv.example.com:1234
 ## Best Practices
 
 ### Security Tips
+
 1. **Never Share Credentials**: Keep your login information private
 2. **Use Strong Passwords**: Change default passwords if possible
 3. **Secure Network**: Avoid logging in on public Wi-Fi networks
 4. **Regular Updates**: Keep the app updated for security patches
 
 ### Performance Tips
+
 1. **Save Credentials**: Use the "Remember Me" option for faster access
 2. **Multiple Users**: You can add multiple IPTV accounts if needed
 3. **Quick Access**: Pin frequently used accounts for easy switching
@@ -175,6 +190,7 @@ Server URL: http://iptv.example.com:1234
 ## Alternative Login Methods
 
 IPTV Smarters Pro also supports:
+
 - **M3U Playlist URL**: If your provider offers M3U format
 - **Local Playlist**: Upload M3U file from your device
 - **EPG URL**: For electronic program guide
@@ -195,6 +211,7 @@ If you have multiple IPTV subscriptions:
 Logging in with Xtream Codes API on IPTV Smarters Pro is straightforward once you have the correct credentials. Follow this guide step-by-step, and you'll be streaming your favorite content in no time.
 
 **Related Guides:**
+
 - [How to Install and Use IPTV Smarters Pro on Samsung Smart TV and LG Smart TV](/how-to-install-iptv-smarters-pro-samsung-lg-smart-tv)
 - [How to Install and Watch IPTV on Roku](/how-to-install-watch-iptv-on-roku)
 - [Top 5 Tips for Optimizing Your IPTV Experience](/top-5-tips-optimizing-iptv-experience)
@@ -204,4 +221,3 @@ If you continue to experience login issues, contact your IPTV service provider f
 ---
 
 **Important**: Always obtain your IPTV credentials from your legitimate service provider. Using unauthorized credentials may violate terms of service and could result in account suspension.
-

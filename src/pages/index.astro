@@ -4,7 +4,6 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
@@ -16,7 +15,8 @@ import paymentLinks from '~/config/pricing';
 
 const metadata = {
   title: 'IPTV Smarters Pro: Elevate Your Entertainment Experience',
-  description: '🔥 Discover the ultimate way to stream your favorite shows and movies with IPTV Smarters Pro. Enjoy seamless entertainment anytime, anywhere. Try now!',
+  description:
+    '🔥 Discover the ultimate way to stream your favorite shows and movies with IPTV Smarters Pro. Enjoy seamless entertainment anytime, anywhere. Try now!',
   ignoreTitleTemplate: true,
   robots: {
     index: true,
@@ -24,50 +24,55 @@ const metadata = {
   },
   openGraph: {
     title: 'IPTV Smarters Pro: Elevate Your Entertainment Experience',
-    description: '🔥 Discover the ultimate way to stream your favorite shows and movies with IPTV Smarters Pro. Enjoy seamless entertainment anytime, anywhere. Try now!',
+    description:
+      '🔥 Discover the ultimate way to stream your favorite shows and movies with IPTV Smarters Pro. Enjoy seamless entertainment anytime, anywhere. Try now!',
     type: 'website',
   },
-}
+};
 ---
 
 <Layout metadata={metadata}>
   <!-- Structured Data for SEO -->
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "IPTV Smarters Pro",
-    "url": "https://iptvsmartproviders.com",
-    "logo": "https://iptvsmartproviders.com/assets/images/logo.jpeg",
-    "description": "IPTV Smarters Pro - Best IPTV service with 15,000+ live TV channels and 50,000+ movies & TV shows",
-    "sameAs": [
-      "https://iptvsmartproviders.com"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+212628096812",
-      "contactType": "customer service",
-      "email": "contact@iptvsmartproviders.com",
-      "availableLanguage": "English"
-    }
-  })} />
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "IPTV Streaming Service",
-    "provider": {
-      "@type": "Organization",
-      "name": "IPTV Smarters Pro"
-    },
-    "areaServed": "Worldwide",
-    "description": "Premium IPTV streaming service with 15,000+ live TV channels, 50,000+ movies and TV shows",
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "USD",
-      "price": "20",
-      "priceValidUntil": "2025-12-31",
-      "availability": "https://schema.org/InStock"
-    }
-  })} />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'IPTV Smarters Pro',
+      url: 'https://iptvsmartproviders.com',
+      logo: 'https://iptvsmartproviders.com/assets/images/logo.jpeg',
+      description: 'IPTV Smarters Pro - Best IPTV service with 15,000+ live TV channels and 50,000+ movies & TV shows',
+      sameAs: ['https://iptvsmartproviders.com'],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+212628096812',
+        contactType: 'customer service',
+        email: 'contact@iptvsmartproviders.com',
+        availableLanguage: 'English',
+      },
+    })}
+  />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'IPTV Streaming Service',
+      provider: {
+        '@type': 'Organization',
+        name: 'IPTV Smarters Pro',
+      },
+      areaServed: 'Worldwide',
+      description: 'Premium IPTV streaming service with 15,000+ live TV channels, 50,000+ movies and TV shows',
+      offers: {
+        '@type': 'Offer',
+        priceCurrency: 'USD',
+        price: '20',
+        priceValidUntil: '2025-12-31',
+        availability: 'https://schema.org/InStock',
+      },
+    })}
+  />
   <!-- Hero Widget ******************* -->
 
   <Hero
@@ -94,7 +99,9 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Discover the ultimate experience with Smarters Pro. Watch your favorite shows, movies, and live TV channels on-the-go. Seamless streaming, user-friendly interface, and endless content options. Try IPTV Smarters Pro today!</span
+        Discover the ultimate experience with Smarters Pro. Watch your favorite shows, movies, and live TV channels
+        on-the-go. Seamless streaming, user-friendly interface, and endless content options. Try IPTV Smarters Pro
+        today!</span
       >
     </Fragment>
   </Hero>
@@ -167,8 +174,11 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">With our cutting-edge IPTV solution,</h3>
-      accessing your favorite content has never been easier or more enjoyable. Whether you're a sports fanatic, a movie buff, or a TV show enthusiast, we've got you covered.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        With our cutting-edge IPTV solution,
+      </h3>
+      accessing your favorite content has never been easier or more enjoyable. Whether you're a sports fanatic, a movie buff,
+      or a TV show enthusiast, we've got you covered.
     </Fragment>
 
     <Fragment slot="bg">
@@ -187,14 +197,13 @@ const metadata = {
       },
       {
         title: 'Stream Smarters',
-        description:
-          'Simplify your entertainment with IPTV Smarters. Secure streaming, endless choices.',
+        description: 'Simplify your entertainment with IPTV Smarters. Secure streaming, endless choices.',
       },
       {
         title: 'Discover Ease',
         description:
           "Navigate easily, stream securely. <a href='https://iptvsmartproviders.com' class=' text-primary dark:text-primary hover:text-primary/80 font-bold' target='_blank'>Join IPTV Smarters today.</a>",
-      }
+      },
     ]}
     image={{
       src: '~/assets/images/iptv-smarter.png',
@@ -210,8 +219,6 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-
-
   <!-- Steps Widget ****************** -->
 
   <Steps
@@ -219,20 +226,17 @@ const metadata = {
     items={[
       {
         title: 'Step 1: <span class="font-medium">Subscribe to Our Service</span>',
-        description:
-          "Subscribe now and gain access to a world of entertainment.",
+        description: 'Subscribe now and gain access to a world of entertainment.',
         icon: 'tabler:package',
       },
       {
         title: 'Step 2: <span class="font-medium">Download Our App</span>',
-        description:
-          "Download our app for seamless access to your favorite content.",
+        description: 'Download our app for seamless access to your favorite content.',
         icon: 'tabler:letter-case',
       },
       {
         title: 'Step 3: <span class="font-medium">Enter Your Activation Codes</span>',
-        description:
-          'Enter your activation codes (Xtream codes api) and start enjoying our services.',
+        description: 'Enter your activation codes (Xtream codes api) and start enjoying our services.',
         icon: 'tabler:paint',
       },
       {
@@ -247,105 +251,104 @@ const metadata = {
   />
 
   <!-- Features2 Widget ************** -->
-<Prices
-title="Iptv Smarters Pro Pricing Plans"
-subtitle="One time payment"
-prices={[
-  {
-    title: '3 Months',
-    subtitle: 'Best selling - 55% Off',
-    price: paymentLinks.threeMonthsPrice,
-    period: 'one time payment',
-    items: [
+  <Prices
+    title="Iptv Smarters Pro Pricing Plans"
+    subtitle="One time payment"
+    prices={[
       {
-        description: '15.000+ Live TV Channels',
+        title: '3 Months',
+        subtitle: 'Best selling - 55% Off',
+        price: paymentLinks.threeMonthsPrice,
+        period: 'one time payment',
+        items: [
+          {
+            description: '15.000+ Live TV Channels',
+          },
+          {
+            description: '50,000+ Movies & TV Shows',
+          },
+          {
+            description: 'Premium Live TV Channels',
+          },
+          {
+            description: 'TV Guide (EPG)',
+          },
+          {
+            description: 'Support All Devices',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Pay Now',
+          href: paymentLinks.threeMonths,
+        },
+        hasRibbon: true,
+        ribbonTitle: 'POPULAR',
       },
       {
-        description: '50,000+ Movies & TV Shows',
+        title: '6 Months',
+        subtitle: 'Best selling - 50% Off',
+        price: paymentLinks.sixMonthsPrice,
+        period: 'one time payment',
+        items: [
+          {
+            description: '15.000+ Live TV Channels',
+          },
+          {
+            description: '50,000+ Movies & TV Shows',
+          },
+          {
+            description: 'Premium Live TV Channels',
+          },
+          {
+            description: 'TV Guide (EPG)',
+          },
+          {
+            description: 'Support All Devices',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Pay Now',
+          href: paymentLinks.sixMonths,
+        },
       },
       {
-        description: 'Premium Live TV Channels',
+        title: '1 Month',
+        subtitle: 'Best selling - 50% Off',
+        price: paymentLinks.monthPrice,
+        period: 'one time payment',
+        items: [
+          {
+            description: '15.000+ Live TV Channels',
+          },
+          {
+            description: '50,000+ Movies & TV Shows',
+          },
+          {
+            description: 'Premium Live TV Channels',
+          },
+          {
+            description: 'TV Guide (EPG)',
+          },
+          {
+            description: 'Support All Devices',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Pay Now',
+          href: paymentLinks.monthly,
+        },
       },
-      {
-        description: 'TV Guide (EPG)',
-      },
-      {
-        description: 'Support All Devices',
-      },
-    ],
-    callToAction: {
-      target: '_blank',
-      text: 'Pay Now',
-      href: paymentLinks.threeMonths,
-    },
-    hasRibbon: true,
-    ribbonTitle: 'POPULAR',
-  },
-  {
-    title: '6 Months',
-    subtitle: 'Best selling - 50% Off',
-    price: paymentLinks.sixMonthsPrice,
-    period: 'one time payment',
-    items: [
-      {
-        description: '15.000+ Live TV Channels',
-      },
-      {
-        description: '50,000+ Movies & TV Shows',
-      },
-      {
-        description: 'Premium Live TV Channels',
-      },
-      {
-        description: 'TV Guide (EPG)',
-      },
-      {
-        description: 'Support All Devices',
-      },
-    ],
-    callToAction: {
-      target: '_blank',
-      text: 'Pay Now',
-      href: paymentLinks.sixMonths,
-    },
-  },
-  {
-    title: '1 Month',
-    subtitle: 'Best selling - 50% Off',
-    price: paymentLinks.monthPrice,
-    period: 'one time payment',
-    items: [
-      {
-        description: '15.000+ Live TV Channels',
-      },
-      {
-        description: '50,000+ Movies & TV Shows',
-      },
-      {
-        description: 'Premium Live TV Channels',
-      },
-      {
-        description: 'TV Guide (EPG)',
-      },
-      {
-        description: 'Support All Devices',
-      },
-    ],
-    callToAction: {
-      target: '_blank',
-      text: 'Pay Now',
-      href: paymentLinks.monthly,
-    },
-  }
-]}
-/>
+    ]}
+  />
 
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
     title="Latest IPTV Guides & Channel Updates"
-    information={`Stay updated with the latest news, channel additions, and helpful guides about IPTV Smarters Pro. Learn how to make the most of your subscription and discover new features.`
-    }
+    information={`Stay updated with the latest news, channel additions, and helpful guides about IPTV Smarters Pro. Learn how to make the most of your subscription and discover new features.`}
   />
 
   <!-- FAQs Widget ******************* -->
@@ -359,7 +362,7 @@ prices={[
       {
         title: 'What do I need to start?',
         description:
-          "Subscibe up for iptv smarter pro above. After that, you will get information about username, password and url so you can log in to the smarter iptv app. Once you download the app and log into the app, you can start viewing channels.",
+          'Subscibe up for iptv smarter pro above. After that, you will get information about username, password and url so you can log in to the smarter iptv app. Once you download the app and log into the app, you can start viewing channels.',
       },
       {
         title: 'How can I install IPTV Smarters Pro on my devices?',
@@ -369,22 +372,21 @@ prices={[
       {
         title: "What's something you may find puzzling about IPTV Smarters Pro?",
         description:
-          "Explore FAQs to unravel any mysteries and optimize your IPTV Smarters Pro experience for seamless streaming.",
+          'Explore FAQs to unravel any mysteries and optimize your IPTV Smarters Pro experience for seamless streaming.',
       },
       {
-        title: "On which devices is it possible to install IPTV Smarters Pro?",
+        title: 'On which devices is it possible to install IPTV Smarters Pro?',
         description:
-          "This app is compatible with all devices running the Android operating system, which encompasses the Amazon Firestick, Fire TV, and various other Android devices.",
+          'This app is compatible with all devices running the Android operating system, which encompasses the Amazon Firestick, Fire TV, and various other Android devices.',
       },
       {
         title: 'Is IPTV Smarters Pro Safe?',
         description:
-          "Yes, you can confidently install and utilize this application on any Fire TV or Android device without any concerns regarding safety.",
+          'Yes, you can confidently install and utilize this application on any Fire TV or Android device without any concerns regarding safety.',
       },
       {
         title: 'Is IPTV Smarters app Legal?',
-        description:
-          "Absolutly Yes. This app is 100% legal to install and use.",
+        description: 'Absolutly Yes. This app is 100% legal to install and use.',
       },
     ]}
   />
@@ -412,12 +414,11 @@ prices={[
       },
     ]}
   >
-    <Fragment slot="title">
-      Experience Unlimited Entertainment with IPTV Smarters Pro
-    </Fragment>
+    <Fragment slot="title"> Experience Unlimited Entertainment with IPTV Smarters Pro </Fragment>
 
     <Fragment slot="subtitle">
-      Unlock a world of entertainment with IPTV Smarters Pro. Stream your favorite channels, movies, and shows on any device, anytime, anywhere.
+      Unlock a world of entertainment with IPTV Smarters Pro. Stream your favorite channels, movies, and shows on any
+      device, anytime, anywhere.
     </Fragment>
   </CallToAction>
 </Layout>

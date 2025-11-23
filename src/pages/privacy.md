@@ -27,10 +27,10 @@ Cookies are files with a small amount of data that is commonly used as an anonym
 
 We may employ third-party companies and individuals due to the following reasons:
 
-* To facilitate our Service;
-* To provide the Service on our behalf;
-* To perform Service-related services; or
-* To assist us in analyzing how our Service is used.
+- To facilitate our Service;
+- To provide the Service on our behalf;
+- To perform Service-related services; or
+- To assist us in analyzing how our Service is used.
 
 ## Security
 

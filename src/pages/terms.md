@@ -19,23 +19,23 @@ You may view, download for caching purposes only, and print pages from the websi
 
 You are specifically restricted from all of the following:
 
-* publishing any website material in any other media;
-* selling, sublicensing, and/or otherwise commercializing any website material;
-* publicly performing and/or showing any website material;
-* using this website in any way that is or may be damaging to this website;
-* using this website in any way that impacts user access to this website;
-* using this website contrary to applicable laws and regulations, or in any way may cause harm to the website, or to any person or business entity;
-* engaging in any data mining, data harvesting, data extracting, or any other similar activity in relation to this website;
-* using this website to engage in any advertising or marketing.
+- publishing any website material in any other media;
+- selling, sublicensing, and/or otherwise commercializing any website material;
+- publicly performing and/or showing any website material;
+- using this website in any way that is or may be damaging to this website;
+- using this website in any way that impacts user access to this website;
+- using this website contrary to applicable laws and regulations, or in any way may cause harm to the website, or to any person or business entity;
+- engaging in any data mining, data harvesting, data extracting, or any other similar activity in relation to this website;
+- using this website to engage in any advertising or marketing.
 
 ## Disclaimer
 
 To the maximum extent permitted by applicable law, we exclude all representations, warranties, and conditions relating to our website and the use of this website. Nothing in this disclaimer will:
 
-* limit or exclude our or your liability for death or personal injury;
-* limit or exclude our or your liability for fraud or fraudulent misrepresentation;
-* limit any of our or your liabilities in any way that is not permitted under applicable law; or
-* exclude any of our or your liabilities that may not be excluded under applicable law.
+- limit or exclude our or your liability for death or personal injury;
+- limit or exclude our or your liability for fraud or fraudulent misrepresentation;
+- limit any of our or your liabilities in any way that is not permitted under applicable law; or
+- exclude any of our or your liabilities that may not be excluded under applicable law.
 
 ## Variation of Terms
 

@@ -9,8 +9,7 @@ const fullUrl = `${whatsappUrl}?text=${encodeURIComponent(message)}`;
 
 <div class="fixed bottom-6 right-6 z-50 group">
   <!-- Alert/Notification Badge -->
-  
-  
+
   <!-- Tooltip/Alert Message -->
   <div class="absolute bottom-full right-0 mb-3 hidden group-hover:block animate-fade-in">
     <div class="bg-gray-900 dark:bg-gray-800 text-white text-sm rounded-lg px-4 py-2 shadow-xl whitespace-nowrap">
@@ -18,10 +17,11 @@ const fullUrl = `${whatsappUrl}?text=${encodeURIComponent(message)}`;
         <Icon name="tabler:brand-whatsapp" class="w-4 h-4 text-green-400" />
         <span>Chat with us on WhatsApp!</span>
       </div>
-      <div class="absolute bottom-0 right-4 transform translate-y-1/2 rotate-45 w-2 h-2 bg-gray-900 dark:bg-gray-800"></div>
+      <div class="absolute bottom-0 right-4 transform translate-y-1/2 rotate-45 w-2 h-2 bg-gray-900 dark:bg-gray-800">
+      </div>
     </div>
   </div>
-  
+
   <!-- WhatsApp Button -->
   <a
     href={fullUrl}
@@ -46,9 +46,8 @@ const fullUrl = `${whatsappUrl}?text=${encodeURIComponent(message)}`;
       transform: translateY(0);
     }
   }
-  
+
   .animate-fade-in {
     animation: fade-in 0.3s ease-out;
   }
 </style>
-

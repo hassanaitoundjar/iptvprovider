@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -10,7 +10,7 @@ export const headerData = {
       text: 'About',
       href: '/about',
     },
-   
+
     {
       text: 'Blog',
       href: '/blog',
@@ -27,7 +27,6 @@ export const headerData = {
       text: 'Contact',
       href: '/contact',
     },
-   
   ],
   actions: [{ text: 'subscribe ', href: '/pricing', target: '_blank' }],
 };
@@ -56,8 +55,7 @@ export const footerData = {
         { text: 'linux', href: '#' },
       ],
     },
-    
-   
+
     {
       title: 'Company',
       links: [

@@ -20,6 +20,7 @@ IPTV Smarters Pro is a powerful streaming application that allows you to access 
 ## Prerequisites
 
 Before you begin, make sure you have:
+
 - A Samsung Smart TV (Tizen OS) or LG Smart TV (webOS)
 - An active IPTV subscription with Xtream Codes API credentials
 - A stable internet connection
@@ -48,9 +49,11 @@ Before you begin, make sure you have:
 4. Enter your credentials:
 
 > **Need help with login?** Check out our detailed guide on [How to Login Xtream Codes API on IPTV Smarters Pro](/how-to-login-xtream-codes-api-iptv-smarters-pro) for step-by-step instructions.
-   - **Username**: Your IPTV service username
-   - **Password**: Your IPTV service password
-   - **Server URL**: Your IPTV service server URL
+
+- **Username**: Your IPTV service username
+- **Password**: Your IPTV service password
+- **Server URL**: Your IPTV service server URL
+
 5. Click **Add User** to save and connect
 
 ## Installation on LG Smart TV (webOS)
@@ -95,21 +98,25 @@ Once installed and configured, you can:
 ### Common Issues and Solutions
 
 **App won't install:**
+
 - Ensure Developer Mode is properly enabled
 - Check that your TV model is compatible
 - Verify you have the correct package file for your TV's OS
 
 **Can't connect to server:**
+
 - Verify your internet connection
 - Double-check your login credentials
 - Contact your IPTV service provider to confirm server status
 
 **Channels not loading:**
+
 - Check your internet speed (minimum 10 Mbps recommended)
 - Restart the app and try again
 - Clear the app cache if available
 
 **Playback issues:**
+
 - Ensure your internet connection is stable
 - Try a different channel to test
 - Contact your IPTV provider for support
@@ -128,6 +135,7 @@ Once installed and configured, you can:
 Installing IPTV Smarters Pro on your Samsung or LG Smart TV opens up a world of entertainment possibilities. With thousands of channels and on-demand content at your fingertips, you can enjoy a premium streaming experience directly on your smart TV.
 
 **Related Guides:**
+
 - [How to Login Xtream Codes API on IPTV Smarters Pro](/how-to-login-xtream-codes-api-iptv-smarters-pro)
 - [How to Install and Watch IPTV on Roku](/how-to-install-watch-iptv-on-roku)
 - [Top 5 Tips for Optimizing Your IPTV Experience](/top-5-tips-optimizing-iptv-experience)
@@ -137,4 +145,3 @@ For additional support or questions, contact your IPTV service provider or visit
 ---
 
 **Note**: Make sure you have a valid IPTV subscription before installing the app. IPTV Smarters Pro is a player application and requires an active IPTV service to function.
-

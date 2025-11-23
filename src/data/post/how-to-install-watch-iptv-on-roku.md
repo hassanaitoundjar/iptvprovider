@@ -18,6 +18,7 @@ metadata:
 Roku is one of the most popular streaming devices, and with the right setup, you can enjoy IPTV services on your Roku device. This comprehensive guide will show you how to install and watch IPTV on Roku.
 
 > **Looking for other device installation guides?** Check out:
+>
 > - [How to Install and Use IPTV Smarters Pro on Samsung Smart TV and LG Smart TV](/blog/how-to-install-iptv-smarters-pro-samsung-lg-smart-tv)
 
 ## Understanding Roku and IPTV Compatibility
@@ -153,6 +154,7 @@ For the best IPTV experience on Roku, we recommend:
 ### Screen Mirroring Not Working
 
 **Solutions:**
+
 - Ensure both devices are on the same Wi-Fi network
 - Restart both Roku and your mobile device
 - Check Roku screen mirroring settings
@@ -161,6 +163,7 @@ For the best IPTV experience on Roku, we recommend:
 ### Playback Issues
 
 **Solutions:**
+
 - Check internet connection speed
 - Reduce video quality in IPTV Smarters Pro
 - Close other apps on your mobile device
@@ -169,6 +172,7 @@ For the best IPTV experience on Roku, we recommend:
 ### Audio/Video Sync Issues
 
 **Solutions:**
+
 - Check HDMI cable connection
 - Adjust audio delay in IPTV Smarters Pro settings
 - Restart both devices
@@ -201,6 +205,7 @@ If Roku limitations are problematic:
 While Roku doesn't natively support IPTV Smarters Pro, you can still enjoy IPTV content using screen mirroring or alternative methods. Screen mirroring from an Android device provides the most complete IPTV experience on Roku.
 
 **Related Guides:**
+
 - [How to Install and Use IPTV Smarters Pro on Samsung Smart TV and LG Smart TV](/how-to-install-iptv-smarters-pro-samsung-lg-smart-tv)
 - [How to Login Xtream Codes API on IPTV Smarters Pro](/how-to-login-xtream-codes-api-iptv-smarters-pro)
 - [Top 5 Tips for Optimizing Your IPTV Experience](/top-5-tips-optimizing-iptv-experience)
@@ -210,4 +215,3 @@ For the best IPTV experience, consider using an Android TV box or Fire TV Stick,
 ---
 
 **Note**: Screen mirroring quality depends on your network speed and device performance. For optimal results, ensure both devices are on a stable, high-speed network connection.
-
