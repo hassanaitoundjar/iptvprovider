@@ -101,9 +101,9 @@ IPTV (Internet Protocol Television) is a technology that delivers television con
 
 ### Step 3: Test the Service
 
-- Start with a monthly subscription
-- Test on your primary devices
-- Check streaming quality and buffering
+- Start with a monthly subscription (see our [pricing options](/pricing))
+- Test on your primary devices ([download for all platforms](/download))
+- Check streaming quality and buffering (read our [buffering troubleshooting guide](/how-to-fix-iptv-buffering-issues-complete-troubleshooting-guide))
 - Evaluate channel selection and VOD library
 
 ### Step 4: Consider Long-term Plans
@@ -116,9 +116,9 @@ IPTV (Internet Protocol Television) is a technology that delivers television con
 
 Once you've chosen a provider, you'll need to set up IPTV Smarters Pro:
 
-1. **Subscribe to a Plan**: Choose your preferred subscription
-2. **Receive Credentials**: Get your username, password, and server URL
-3. **Install IPTV Smarters Pro**: Download the app on your device
+1. **Subscribe to a Plan**: Choose your preferred subscription from our [pricing plans](/pricing)
+2. **Receive Credentials**: Get your username, password, and server URL via email
+3. **Install IPTV Smarters Pro**: [Download the app](/download) on your device
 4. **Login**: Use Xtream Codes API to connect
 
 > **Need help with setup?** Check out our detailed guides:
@@ -223,4 +223,4 @@ Start your IPTV journey today and transform your entertainment experience!
 
 ---
 
-**Ready to get started?** Subscribe to IPTV Smarters Pro and begin streaming thousands of channels and on-demand content on any device, anywhere, anytime.
+**Ready to get started?** [Subscribe to IPTV Smarters Pro](/pricing) and begin streaming thousands of channels and on-demand content on any device, anywhere, anytime. [Download the app now](/download) or [contact our support team](/contact) for assistance.

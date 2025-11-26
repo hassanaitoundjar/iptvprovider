@@ -205,7 +205,7 @@ Once you receive trial access, you'll get:
 
 ### Step 2: Install IPTV Smarters Pro
 
-Download and install IPTV Smarters Pro on your device.
+[Download and install IPTV Smarters Pro](/download) on your device.
 
 > **Need installation help?** Check our guides:
 >
@@ -381,4 +381,4 @@ Start your IPTV journey with a free trial and experience the difference!
 
 ---
 
-**Ready to test IPTV?** Look for providers offering free trials and start testing today to find the perfect service for your needs.
+**Ready to test IPTV?** [View our pricing plans](/pricing) to get started with IPTV Smarters Pro. [Download the app](/download) for your device, or [contact us](/contact) for more information about our service.

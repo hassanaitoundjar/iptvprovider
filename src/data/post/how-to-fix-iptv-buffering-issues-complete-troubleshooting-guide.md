@@ -347,13 +347,15 @@ If all local solutions fail, the issue may be server-side.
 
 ## When to Contact Support
 
-Contact your IPTV provider if:
+[Contact your IPTV provider](/contact) if:
 
 - ✅ All troubleshooting steps completed
 - ✅ Internet speed is sufficient
 - ✅ Issue persists across all channels
 - ✅ Problem occurs at all times
 - ✅ Multiple devices affected
+
+We offer 24/7 support to help you resolve any issues. [Get in touch now](/contact) or check our [pricing plans](/pricing) to upgrade your service.
 
 ## Conclusion
 
@@ -369,4 +371,4 @@ Remember: A stable internet connection and proper device setup are key to smooth
 
 ---
 
-**Still experiencing issues?** Contact your IPTV service provider for additional support and server-side troubleshooting.
+**Still experiencing issues?** [Contact our support team](/contact) for additional assistance and server-side troubleshooting. Or check our [download page](/download) to ensure you have the latest app version.

@@ -35,9 +35,9 @@ Amazon Fire TV Stick is one of the most popular devices for streaming IPTV conte
 Before you begin, make sure you have:
 
 - Amazon Fire TV Stick (any generation)
-- Active IPTV subscription
+- Active IPTV subscription ([view pricing plans](/pricing))
 - Stable internet connection (minimum 25 Mbps)
-- IPTV credentials (username, password, server URL)
+- IPTV credentials (username, password, server URL) - received after [subscribing](/pricing)
 
 ## Method 1: Install IPTV Smarters Pro via Downloader App
 
@@ -420,4 +420,4 @@ Enjoy streaming IPTV on your Firestick!
 
 ---
 
-**Ready to get started?** Follow this guide to install IPTV Smarters Pro on your Firestick and begin streaming today!
+**Ready to get started?** [Subscribe to IPTV Smarters Pro](/pricing), follow this guide to install on your Firestick, and begin streaming today! Need help? [Contact our 24/7 support team](/contact).

@@ -26,7 +26,8 @@ Xtream Codes API is a protocol used by many IPTV service providers to deliver co
 
 Before you begin, make sure you have:
 
-- IPTV Smarters Pro installed on your device
+- IPTV Smarters Pro installed on your device ([download here](/download))
+- Active IPTV subscription ([view pricing](/pricing))
 
 > **Haven't installed IPTV Smarters Pro yet?** Check out our installation guides:
 >
@@ -216,7 +217,7 @@ Logging in with Xtream Codes API on IPTV Smarters Pro is straightforward once yo
 - [How to Install and Watch IPTV on Roku](/how-to-install-watch-iptv-on-roku)
 - [Top 5 Tips for Optimizing Your IPTV Experience](/top-5-tips-optimizing-iptv-experience)
 
-If you continue to experience login issues, contact your IPTV service provider for assistance. They can verify your account status and provide correct login information.
+If you continue to experience login issues, [contact our support team](/contact) for assistance. They can verify your account status and provide correct login information. Need to subscribe? [View our pricing plans](/pricing) or [download the app](/download) to get started.
 
 ---
 
